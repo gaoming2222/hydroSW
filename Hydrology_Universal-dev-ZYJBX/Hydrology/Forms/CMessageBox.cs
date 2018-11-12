@@ -49,7 +49,7 @@ namespace Hydrology.Forms
 
         private void EH_TimerElapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            // 显示点点号
+            // 显示点点号   sssss
             m_iDotCount = (m_iDotCount + 1) % 7;
             string str = m_messageInfo;
             for (int i = 0; i < m_iDotCount; ++i)
