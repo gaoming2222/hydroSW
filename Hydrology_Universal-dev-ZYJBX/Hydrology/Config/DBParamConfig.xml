@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DBParamConfig>
+  <AddToDBDelay>60000</AddToDBDelay>
+  <PageRowCount>1000</PageRowCount>
+  <AddBufferMax>1000</AddBufferMax>
+  <UIPageRowCount>1000</UIPageRowCount>
+  <UpdateBufferMax>1000</UpdateBufferMax>
+</DBParamConfig>

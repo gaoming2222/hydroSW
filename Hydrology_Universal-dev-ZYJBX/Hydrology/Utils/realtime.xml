@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Items>
+    <RealTimeItem>
+      <sname>aaa</sname>
+      <stype>EHydrology</stype>
+      <sid>1</sid>
+      <rainfall>1</rainfall>
+      <periodrain>1</periodrain>
+      <wateryield>1</wateryield>
+      <voltage>1</voltage>
+      <timerecv>2014-03-08T14:49:29.4230811+08:00</timerecv>
+      <timedevicegained>2014-03-07T14:49:29.4240812+08:00</timedevicegained>
+      <port>1</port>
+      <msgtype>EAdditional</msgtype>
+      <channeltype>BeiDou</channeltype>
+    </RealTimeItem>
+    <RealTimeItem>
+      <sname>bbb</sname>
+      <stype>EHydrology</stype>
+      <sid>2</sid>
+      <rainfall>1</rainfall>
+      <periodrain>1</periodrain>
+      <wateryield>1</wateryield>
+      <voltage>1</voltage>
+      <timerecv>0001-01-01T00:00:00</timerecv>
+      <timedevicegained>2014-03-07T14:49:29.4240812+08:00</timedevicegained>
+      <port>1</port>
+      <msgtype>EAdditional</msgtype>
+      <channeltype>BeiDou</channeltype>
+    </RealTimeItem>
+    <RealTimeItem>
+      <sname>aaa</sname>
+      <stype>EHydrology</stype>
+      <sid />
+      <rainfall xsi:nil="true" />
+      <periodrain>1</periodrain>
+      <wateryield>1</wateryield>
+      <voltage>1</voltage>
+      <timerecv>2014-03-08T14:49:29.4240812+08:00</timerecv>
+      <timedevicegained>2014-03-07T14:49:29.4240812+08:00</timedevicegained>
+      <msgtype>ETimed</msgtype>
+      <channeltype>BeiDou</channeltype>
+    </RealTimeItem>
+  </Items>
+</Root>

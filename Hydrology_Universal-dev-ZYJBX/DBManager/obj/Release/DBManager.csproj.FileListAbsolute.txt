@@ -1,0 +1,6 @@
+C:\Users\Public\Learn\Hydrology\bin\Release\DB\SQLServer\CSQLCommunicationRate.cs
+C:\Users\Public\Learn\Hydrology\bin\Release\DBManager.dll
+C:\Users\Public\Learn\Hydrology\bin\Release\DBManager.pdb
+C:\Users\Public\Learn\Hydrology\src\Hydrology\DBManager\obj\Release\DBManager.csprojResolveAssemblyReference.cache
+C:\Users\Public\Learn\Hydrology\src\Hydrology\DBManager\obj\Release\DBManager.dll
+C:\Users\Public\Learn\Hydrology\src\Hydrology\DBManager\obj\Release\DBManager.pdb

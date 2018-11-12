@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8740AB08-29BA-4738-80DB-DDAD85455C81}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DBManager</RootNamespace>
+    <AssemblyName>DBManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CDBLog.cs" />
+    <Compile Include="CDBParams.cs" />
+    <Compile Include="CDBManager.cs" />
+    <Compile Include="DB\SQLServer\CDBMutex.cs" />
+    <Compile Include="DB\SQLServer\CDBSQLTSRain.cs" />
+    <Compile Include="DB\SQLServer\CDBSQLTSVoltage.cs" />
+    <Compile Include="DB\SQLServer\CDBSQLTSWater.cs" />
+    <Compile Include="DB\SQLServer\CSQLBase.cs" />
+    <Compile Include="DB\SQLServer\CSQLCurrentData.cs" />
+    <Compile Include="DB\SQLServer\CSQLPartitionMgr.cs" />
+    <Compile Include="DB\SQLServer\CSQLRain.cs" />
+    <Compile Include="DB\SQLServer\CSQLSerialPort.cs" />
+    <Compile Include="DB\SQLServer\CSQLSoilData.cs" />
+    <Compile Include="DB\SQLServer\CSQLSoilStation.cs" />
+    <Compile Include="DB\SQLServer\CSQLStation.cs" />
+    <Compile Include="DB\SQLServer\CSQLSubCenter.cs" />
+    <Compile Include="DB\SQLServer\CSQLUser.cs" />
+    <Compile Include="DB\SQLServer\CSQLVoltage.cs" />
+    <Compile Include="DB\SQLServer\CSQLWarningInfo.cs" />
+    <Compile Include="DB\SQLServer\CSQLWater.cs" />
+    <Compile Include="DB\SQLServer\CSQLWaterFlowMap.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Interface\ICurrentDataProxy.cs" />
+    <Compile Include="Interface\IMultiThread.cs" />
+    <Compile Include="Interface\IRainProxy.cs" />
+    <Compile Include="Interface\ISerialPortProxy.cs" />
+    <Compile Include="Interface\ISoilDataProxy.cs" />
+    <Compile Include="Interface\ISoilStationProxy.cs" />
+    <Compile Include="Interface\IStationProxy.cs" />
+    <Compile Include="Interface\ISubCenterProxy.cs" />
+    <Compile Include="Interface\ITSRainProxy.cs" />
+    <Compile Include="Interface\ITSVoltage.cs" />
+    <Compile Include="Interface\ITSWater.cs" />
+    <Compile Include="Interface\IUserProxy.cs" />
+    <Compile Include="Interface\IVoltageProxy.cs" />
+    <Compile Include="Interface\IWarningInfoProxy.cs" />
+    <Compile Include="Interface\IWaterFlowMapProxy.cs" />
+    <Compile Include="Interface\IWaterProxy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DB\Access\" />
+    <Folder Include="DB\Oracle\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{53945256-B633-46EF-B58F-B3EC9A5997B0}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

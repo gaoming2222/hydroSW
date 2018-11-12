@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DBPartitionConfig>
+  <Rain>
+    <day>180</day>
+    <hours>0</hours>
+    <minutes>0</minutes>
+    <seconds>0</seconds>
+    <milliseconds>0</milliseconds>
+  </Rain>
+  <Water>
+    <day>180</day>
+    <hours>0</hours>
+    <minutes>0</minutes>
+    <seconds>0</seconds>
+    <milliseconds>0</milliseconds>
+  </Water>
+  <Voltage>
+    <day>180</day>
+    <hours>0</hours>
+    <minutes>0</minutes>
+    <seconds>0</seconds>
+    <milliseconds>0</milliseconds>
+  </Voltage>
+</DBPartitionConfig>

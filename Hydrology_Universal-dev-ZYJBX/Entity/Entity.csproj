@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{53945256-B633-46EF-B58F-B3EC9A5997B0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Entity</RootNamespace>
+    <AssemblyName>Entity</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CEntityCommunicationRate.cs" />
+    <Compile Include="CEntityPackage.cs" />
+    <Compile Include="CEntityRain.cs" />
+    <Compile Include="CEntitySerialPort.cs" />
+    <Compile Include="CEntitySoilData.cs" />
+    <Compile Include="CEntitySoilStation.cs" />
+    <Compile Include="CEntityStation.cs" />
+    <Compile Include="CEntitySubCenter.cs" />
+    <Compile Include="CEntityTSRain.cs" />
+    <Compile Include="CEntityTSVoltage.cs" />
+    <Compile Include="CEntityTSWater.cs" />
+    <Compile Include="CEntityUser.cs" />
+    <Compile Include="CEntityVoltage.cs" />
+    <Compile Include="CEntityWarningInfo.cs" />
+    <Compile Include="CEntityWater.cs" />
+    <Compile Include="CEntityWaterFlowMap.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Protocol\Channel\HDModemDataStruct.cs" />
+    <Compile Include="Protocol\Channel\HDModemInfoStruct.cs" />
+    <Compile Include="Protocol\Data\CReportStruct.cs" />
+    <Compile Include="Protocol\Data\CSDStruct.cs" />
+    <Compile Include="Protocol\Data\CUpData.cs" />
+    <Compile Include="Protocol\Data\CUpReport.cs" />
+    <Compile Include="Protocol\Data\HDModemDataEventArgs.cs" />
+    <Compile Include="Protocol\Data\IReport.cs" />
+    <Compile Include="Utils\CEnumDefine.cs" />
+    <Compile Include="CEntityRealTime.cs" />
+    <Compile Include="Utils\CEventArgsDefine.cs" />
+    <Compile Include="Utils\CMultiTaskWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protocol\Channel\CBeidou.cs" />
+    <Compile Include="Protocol\Channel\CGprsEventArgs.cs" />
+    <Compile Include="Protocol\Channel\CGsmEventArgs.cs" />
+    <Compile Include="Protocol\Channel\CGSMStruct.cs" />
+    <Compile Include="Protocol\Channel\ModemDataStruct.cs" />
+    <Compile Include="Protocol\Channel\ModemInfoStruct.cs" />
+    <Compile Include="Protocol\Data\CBatchStruct.cs" />
+    <Compile Include="Protocol\Data\CDownConf.cs" />
+    <Compile Include="Protocol\Data\CDownParam.cs" />
+    <Compile Include="Protocol\Data\CReportData.cs" />
+    <Compile Include="Protocol\Data\CSoilStruct.cs" />
+    <Compile Include="Protocol\Data\CSpecialChars.cs" />
+    <Compile Include="Protocol\Data\ModemDataEventArgs.cs" />
+    <Compile Include="Protocol\Data\ProtocolStrMaps.cs" />
+    <Compile Include="Utils\CStringFromatHelper.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataBaseConfig>
+  <DatabaseSource>(local)</DatabaseSource>
+  <DatabaseName>MyTest1</DatabaseName>
+  <UserName>sa</UserName>
+  <Password>123456</Password>
+  <Timeout>30</Timeout>
+</DataBaseConfig>

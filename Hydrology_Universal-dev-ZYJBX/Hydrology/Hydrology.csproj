@@ -1,0 +1,718 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCA028FB-ED61-4345-9E91-CB8AC29254BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hydrology</RootNamespace>
+    <AssemblyName>Hydrology</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>yac.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=10.0.4504.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\bin\Debug\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Protocol.Channel.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Debug\Protocol.Channel.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Protocol.Data.Interface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Debug\Protocol.Data.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Protocol.Manager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\bin\Debug\Protocol.Manager.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bridage\CMainFormAndCTreeViewBridage.cs" />
+    <Compile Include="CControls\CChart\CChartRain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CChart\CChartSoilData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CChart\CChartVoltage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CChart\CChartWaterStage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CChart\CExChart.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CComboBox\CStationComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CComboBox\CStationComboBox_1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CalendarColumn.cs" />
+    <Compile Include="CControls\CDataGridView\CDataGridViewDayReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewGPRS.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewGPRSConfig.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewMonthReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewRainManage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewRealityWater.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewSerialPort.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewSoilData.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewSoilStation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewStation.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewStorageWater.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewSubCenter.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewSystemClock.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewTSRain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewTSVoltage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewTSWater.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewUser.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewRain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewRTD.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewVoltage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewWater.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewWaterFlowMap.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CExDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewSoilRTD.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\CDataGridViewSoilDataManage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\MonthMoreStationRain.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\MonthMoreStationSoil.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\MoreRainDay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\MoreSoilDay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\MonthMoreStationWater.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\MoreWaterDay.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\NumericUpDownColumn\DataGridViewNumericUpDownCell.cs" />
+    <Compile Include="CControls\CDataGridView\NumericUpDownColumn\DataGridViewNumericUpDownColumn.cs" />
+    <Compile Include="CControls\CDataGridView\NumericUpDownColumn\DataGridViewNumericUpDownEditingControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\OneRainMonth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\OneRainYear.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\OneSoilMonth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\OneWaterMonth.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CDataGridView\OneWaterYear.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CListView\CExListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CListView\CListViewSerialPortState.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CListView\CListViewStationState.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CTabControl\CExTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CTabPage\CDataGridTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CTabPage\CListFormTabPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CControls\CTabPage\CListViewTabPage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CTabPage\CRTDSoilForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CControls\CTabPage\CRTDSoilForm.Designer.cs">
+      <DependentUpon>CRTDSoilForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CControls\CTabPage\CRTDForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CControls\CTabPage\CRTDForm.Designer.cs">
+      <DependentUpon>CRTDForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CControls\CTabPage\CStationStateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CControls\CTabPage\CStationStateForm.Designer.cs">
+      <DependentUpon>CStationStateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CControls\CTreeView\CImageList.cs" />
+    <Compile Include="CControls\CTreeView\CTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CControls\CTreeView\CTreeNode.cs" />
+    <Compile Include="CControls\CTreeView\CTreeType.cs" />
+    <Compile Include="CControls\Interface\ITabPage.cs" />
+    <Compile Include="DataMgr\CDBDataMgr.cs" />
+    <Compile Include="DataMgr\CDBSoilDataMgr.cs" />
+    <Compile Include="DataMgr\CPortDataMgr.cs" />
+    <Compile Include="DataMgr\CSystemInfoMgr.cs" />
+    <Compile Include="DataMgr\CWarningInfoMgr.cs" />
+    <Compile Include="DataMgr\SystemTimeConfig.cs" />
+    <Compile Include="Forms\CBatchFlashMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CBatchFlashMgrForm.designer.cs">
+      <DependentUpon>CBatchFlashMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CBatchManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CBatchManagement.designer.cs">
+      <DependentUpon>CBatchManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CBeidou500MgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CBeidou500MgrForm.designer.cs">
+      <DependentUpon>CBeidou500MgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CBeidouNewMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CBeidouNewMgrForm.designer.cs">
+      <DependentUpon>CBeidouNewMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CDatabaseConfigForm.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CDatabaseConfigForm.designer.cs">
+      <DependentUpon>CDatabaseConfigForm.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Forms\CGprsNewMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CGprsNewMgrForm.designer.cs">
+      <DependentUpon>CGprsNewMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CMessageBox.Designer.cs">
+      <DependentUpon>CMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CProtocolConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CProtocolConfigForm.Designer.cs">
+      <DependentUpon>CProtocolConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CLoginForm.Designer.cs">
+      <DependentUpon>CLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CReadAndSettingMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CReadAndSettingMgrForm.Designer.cs">
+      <DependentUpon>CReadAndSettingMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CReadAndSettingMgrFormNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CReadAndSettingMgrFormNew.designer.cs">
+      <DependentUpon>CReadAndSettingMgrFormNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CSerialPortConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CSerialPortConfigForm.Designer.cs">
+      <DependentUpon>CSerialPortConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CSoilStationMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CSoilStationMgrForm.designer.cs">
+      <DependentUpon>CSoilStationMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CSoilStationMgrForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CSoilStationMgrForm2.designer.cs">
+      <DependentUpon>CSoilStationMgrForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CStationDataAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CStationDataAddForm.Designer.cs">
+      <DependentUpon>CStationDataAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CStationDataMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CStationDataMgrForm.Designer.cs">
+      <DependentUpon>CStationDataMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CStationMgrForm.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Forms\CStationMgrForm.designer.cs">
+      <DependentUpon>CStationMgrForm.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Forms\CStationMgrForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CStationMgrForm2.designer.cs">
+      <DependentUpon>CStationMgrForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CStationSystemClockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CStationSystemClockForm.Designer.cs">
+      <DependentUpon>CStationSystemClockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CSubStationMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CSubStationMgrForm.Designer.cs">
+      <DependentUpon>CSubStationMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CUserMgrForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CUserMgrForm.Designer.cs">
+      <DependentUpon>CUserMgrForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CVoiceConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CVoiceConfigForm.Designer.cs">
+      <DependentUpon>CVoiceConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CWarningInfoQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CWarningInfoQuery.Designer.cs">
+      <DependentUpon>CWarningInfoQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CWaterFlowMapForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CWaterFlowMapForm.Designer.cs">
+      <DependentUpon>CWaterFlowMapForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CWelcomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CWelcomePage.Designer.cs">
+      <DependentUpon>CWelcomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DebugInfoSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DebugInfoSearch.Designer.cs">
+      <DependentUpon>DebugInfoSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FlowRateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FlowRateReport.Designer.cs">
+      <DependentUpon>FlowRateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormHelper.cs" />
+    <Compile Include="Forms\MessageBoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxForm.Designer.cs">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MoreStationsDayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MoreStationsDayForm.Designer.cs">
+      <DependentUpon>MoreStationsDayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MoreStationsMonthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MoreStationsMonthForm.Designer.cs">
+      <DependentUpon>MoreStationsMonthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OneStationYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OneStationYear.Designer.cs">
+      <DependentUpon>OneStationYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Main.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="MainForm.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\CExcelExport.cs" />
+    <Compile Include="Utils\CGprsUtil.cs" />
+    <Compile Include="Utils\CStringUtil.cs" />
+    <Compile Include="Utils\CXmlRealTimeDataSerializer.cs" />
+    <Compile Include="Utils\CXmlRTDSoilData.cs" />
+    <Compile Include="Utils\libZPlay.cs" />
+    <EmbeddedResource Include="CControls\CDataGridView\CDataGridViewGPRS.resx">
+      <DependentUpon>CDataGridViewGPRS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CControls\CDataGridView\CDataGridViewSoilData.resx">
+      <DependentUpon>CDataGridViewSoilData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CControls\CTabControl\CExTabControl.resx">
+      <DependentUpon>CExTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CControls\CTabPage\CListFormTabPage.resx">
+      <DependentUpon>CListFormTabPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CControls\CTabPage\CStationStateForm.resx">
+      <DependentUpon>CStationStateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CBatchFlashMgrForm.resx">
+      <DependentUpon>CBatchFlashMgrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CBatchManagement.resx">
+      <DependentUpon>CBatchManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CBeidou500MgrForm.resx">
+      <DependentUpon>CBeidou500MgrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CBeidouNewMgrForm.resx">
+      <DependentUpon>CBeidouNewMgrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CDatabaseConfigForm.resx">
+      <DependentUpon>CDatabaseConfigForm.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CGprsNewMgrForm.resx">
+      <DependentUpon>CGprsNewMgrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CMessageBox.resx">
+      <DependentUpon>CMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CProtocolConfigForm.resx">
+      <DependentUpon>CProtocolConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CLoginForm.resx">
+      <DependentUpon>CLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CReadAndSettingMgrForm.resx">
+      <DependentUpon>CReadAndSettingMgrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CReadAndSettingMgrFormNew.resx">
+      <DependentUpon>CReadAndSettingMgrFormNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSerialPortConfigForm.resx">
+      <DependentUpon>CSerialPortConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSoilStationMgrForm.resx">
+      <DependentUpon>CSoilStationMgrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSoilStationMgrForm2.resx">
+      <DependentUpon>CSoilStationMgrForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CStationDataAddForm.resx">
+      <DependentUpon>CStationDataAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CStationDataMgrForm.resx">
+      <DependentUpon>CStationDataMgrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CStationMgrForm.resx">
+      <DependentUpon>CStationMgrForm.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CStationMgrForm2.resx">
+      <DependentUpon>CStationMgrForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CStationSystemClockForm.resx">
+      <DependentUpon>CStationSystemClockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CSubStationMgrForm.resx">
+      <DependentUpon>CSubStationMgrForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CUserMgrForm.resx">
+      <DependentUpon>CUserMgrForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CVoiceConfigForm.resx">
+      <DependentUpon>CVoiceConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CWarningInfoQuery.resx">
+      <DependentUpon>CWarningInfoQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CWaterFlowMapForm.resx">
+      <DependentUpon>CWaterFlowMapForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CWelcomePage.resx">
+      <DependentUpon>CWelcomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DebugInfoSearch.resx">
+      <DependentUpon>DebugInfoSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FlowRateReport.resx">
+      <DependentUpon>FlowRateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBoxForm.resx">
+      <DependentUpon>MessageBoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoreStationsDayForm.resx">
+      <DependentUpon>MoreStationsDayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MoreStationsMonthForm.resx">
+      <DependentUpon>MoreStationsMonthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OneStationYear.resx">
+      <DependentUpon>OneStationYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Image1.gif" />
+    <None Include="Resources\水位.gif" />
+    <Content Include="Resources\树\水位.gif" />
+    <Content Include="Resources\树\水文.gif" />
+    <Content Include="Resources\树\雨量.gif" />
+    <Content Include="Resources\远程.png" />
+    <Content Include="yac.ico" />
+    <None Include="Resources\退出界面.png" />
+    <None Include="Resources\add.png" />
+    <Content Include="default.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="libzplay.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\BG.png" />
+    <None Include="Resources\DeletedIcon.ico" />
+    <None Include="Resources\COM_ERROR.png" />
+    <None Include="Resources\COM_NORMAL.png" />
+    <None Include="Resources\delete.png" />
+    <Content Include="Resources\Pic_Password.png" />
+    <Content Include="Resources\Pic_User.png" />
+    <Content Include="Resources\PitureBoxClose.png" />
+    <None Include="Resources\save_all.png" />
+    <None Include="Resources\station_error.png" />
+    <None Include="Resources\station_normal.png" />
+    <None Include="Resources\station_waning.png" />
+    <Content Include="Resources\TextBoxColor.png" />
+    <None Include="Resources\undo.png" />
+    <Content Include="Resources\WhiteSpace.png" />
+    <None Include="Resources\数据库配置.png" />
+    <None Include="Resources\导入.png" />
+    <None Include="Resources\工具栏图标\测站设置.png" />
+    <None Include="Resources\工具栏图标\串口设置.png" />
+    <None Include="Resources\工具栏图标\数据协议.png" />
+    <None Include="Resources\工具栏图标\信道协议.png" />
+    <None Include="Resources\工具栏图标\用户设置.png" />
+    <None Include="Resources\工具栏图标\Flash传输.png" />
+    <None Include="Resources\工具栏图标\GPRS.png" />
+    <None Include="Resources\工具栏图标\U盘传输.png" />
+    <None Include="Resources\工具栏图标\北斗卫星.png" />
+    <None Include="Resources\工具栏图标\畅通率报表.png" />
+    <None Include="Resources\工具栏图标\对时.png" />
+    <None Include="Resources\工具栏图标\分中心管理.png" />
+    <None Include="Resources\工具栏图标\告警信息查询.png" />
+    <None Include="Resources\工具栏图标\声音配置.png" />
+    <None Include="Resources\工具栏图标\数据查询.png" />
+    <None Include="Resources\工具栏图标\数据库配置.png" />
+    <None Include="Resources\工具栏图标\水位流量管理.png" />
+    <None Include="Resources\工具栏图标\退出.png" />
+    <None Include="Resources\工具栏图标\站点读取与设置.png" />
+    <None Include="Resources\工具栏图标\数据校正.png" />
+    <Content Include="Resources\yac.ico" />
+    <Content Include="Resources\工具栏图标\土壤墒情.png" />
+    <Content Include="Resources\标签头部.png" />
+    <Content Include="Resources\树\三级目录未选中.png" />
+    <Content Include="Resources\树\三级目录选中.png" />
+    <Content Include="Resources\树\二级目录未选中.png" />
+    <Content Include="Resources\树\二级目录选中.png" />
+    <Content Include="Resources\树\信道类型未选中.png" />
+    <Content Include="Resources\树\信道类型选中.png" />
+    <Content Include="Resources\树\协议类型未选中.png" />
+    <Content Include="Resources\树\协议类型选中.png" />
+    <Content Include="Resources\树\四级目录未选中.png" />
+    <Content Include="Resources\树\四级目录选中.png" />
+    <Content Include="Resources\树\用户设置未选中.png" />
+    <Content Include="Resources\树\用户设置选中.png" />
+    <Content Include="Resources\树\端口设置未选中.png" />
+    <Content Include="Resources\树\端口设置选中.png" />
+    <Content Include="Resources\树\系统设置未选中.png" />
+    <Content Include="Resources\树\系统设置选中.png" />
+    <Content Include="Resources\树\遥测站设置未选中.png" />
+    <Content Include="Resources\树\遥测站设置选中.png" />
+    <None Include="Resources\欢迎界面.png" />
+    <Content Include="Resources\状态栏.png" />
+    <Content Include="Resources\菜单栏.png" />
+    <Content Include="Resources\菜单栏1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBManager\DBManager.csproj">
+      <Project>{8740AB08-29BA-4738-80DB-DDAD85455C81}</Project>
+      <Name>DBManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entity\Entity.csproj">
+      <Project>{53945256-B633-46EF-B58F-B3EC9A5997B0}</Project>
+      <Name>Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
