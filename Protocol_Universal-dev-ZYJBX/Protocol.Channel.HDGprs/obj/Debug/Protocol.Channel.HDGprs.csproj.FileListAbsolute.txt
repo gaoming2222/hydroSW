@@ -78,3 +78,8 @@ C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.HDGprs\obj\Debug\Protocol.Channel.HDGprs.pdb
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.HDGprs.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.HDGprs.pdb
+E:\C2019110\bin\Debug\Protocol.Channel.HDGprs.dll
+E:\C2019110\bin\Debug\Protocol.Channel.HDGprs.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.HDGprs\obj\Debug\Protocol.Channel.HDGprs.csprojResolveAssemblyReference.cache
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.HDGprs\obj\Debug\Protocol.Channel.HDGprs.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.HDGprs\obj\Debug\Protocol.Channel.HDGprs.pdb

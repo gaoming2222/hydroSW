@@ -195,3 +195,9 @@ C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\gprsdll.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.Gsm.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.Gsm.pdb
+E:\C2019110\bin\Debug\gprsdll.dll
+E:\C2019110\bin\Debug\Protocol.Channel.Gsm.dll
+E:\C2019110\bin\Debug\Protocol.Channel.Gsm.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Gsm\obj\Debug\Protocol.Channel.Gsm.csprojResolveAssemblyReference.cache
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Gsm\obj\Debug\Protocol.Channel.Gsm.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Gsm\obj\Debug\Protocol.Channel.Gsm.pdb

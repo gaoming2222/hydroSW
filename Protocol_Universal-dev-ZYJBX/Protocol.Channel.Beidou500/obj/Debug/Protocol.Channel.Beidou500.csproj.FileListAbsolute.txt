@@ -194,3 +194,9 @@ C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\gprsdll.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.Beidou500.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.Beidou500.pdb
+E:\C2019110\bin\Debug\gprsdll.dll
+E:\C2019110\bin\Debug\Protocol.Channel.Beidou500.dll
+E:\C2019110\bin\Debug\Protocol.Channel.Beidou500.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Beidou500\obj\Debug\Protocol.Channel.Beidou500.csprojResolveAssemblyReference.cache
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Beidou500\obj\Debug\Protocol.Channel.Beidou500.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Beidou500\obj\Debug\Protocol.Channel.Beidou500.pdb

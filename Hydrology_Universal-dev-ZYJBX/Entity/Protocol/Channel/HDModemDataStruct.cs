@@ -8,7 +8,7 @@ namespace Hydrology.Entity
         /// Modem模块的ID号
         /// </summary>
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 12)]
-        public byte[]   m_modemId;
+        public byte[] m_modemId;
 
         /// <summary>
         /// 接收到数据包的时间
@@ -19,7 +19,7 @@ namespace Hydrology.Entity
         /// <summary>
         /// 存储接收到的数据
         /// </summary>
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1451)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 1024)]
         public byte[] m_data_buf;
 
         /// <summary>
@@ -33,6 +33,11 @@ namespace Hydrology.Entity
         ///     0x02：对控制命令帧的回应
         /// </summary>
         public byte m_data_type;
+
+
+        public ushort m_demo_port;
+
+
 
 
     }

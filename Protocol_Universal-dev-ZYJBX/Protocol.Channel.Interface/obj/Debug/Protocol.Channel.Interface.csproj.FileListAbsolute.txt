@@ -175,3 +175,8 @@ C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Interface\obj\Debug\Protocol.Channel.Interface.pdb
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.Interface.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.Interface.pdb
+E:\C2019110\bin\Debug\Protocol.Channel.Interface.dll
+E:\C2019110\bin\Debug\Protocol.Channel.Interface.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Interface\obj\Debug\Protocol.Channel.Interface.csprojResolveAssemblyReference.cache
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Interface\obj\Debug\Protocol.Channel.Interface.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Interface\obj\Debug\Protocol.Channel.Interface.pdb

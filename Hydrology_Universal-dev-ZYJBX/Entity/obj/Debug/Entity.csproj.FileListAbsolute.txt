@@ -157,3 +157,7 @@ C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Entity.pdb
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Hydrology_Universal-dev-ZYJBX\Entity\obj\Debug\Entity.dll
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Hydrology_Universal-dev-ZYJBX\Entity\obj\Debug\Entity.pdb
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Hydrology_Universal-dev-ZYJBX\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+E:\C2019110\bin\Debug\Entity.dll
+E:\C2019110\bin\Debug\Entity.pdb
+E:\C2019110\hydroSW\Hydrology_Universal-dev-ZYJBX\Entity\obj\Debug\Entity.dll
+E:\C2019110\hydroSW\Hydrology_Universal-dev-ZYJBX\Entity\obj\Debug\Entity.pdb

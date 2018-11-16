@@ -208,3 +208,9 @@ C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\gprsdll.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.Gprs.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Channel.Gprs.pdb
+E:\C2019110\bin\Debug\gprsdll.dll
+E:\C2019110\bin\Debug\Protocol.Channel.Gprs.dll
+E:\C2019110\bin\Debug\Protocol.Channel.Gprs.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Gprs\obj\Debug\Protocol.Channel.Gprs.csprojResolveAssemblyReference.cache
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Gprs\obj\Debug\Protocol.Channel.Gprs.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Channel.Gprs\obj\Debug\Protocol.Channel.Gprs.pdb

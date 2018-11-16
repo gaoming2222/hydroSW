@@ -226,3 +226,8 @@ C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\DBManager.pdb
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Hydrology_Universal-dev-ZYJBX\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Hydrology_Universal-dev-ZYJBX\DBManager\obj\Debug\DBManager.dll
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Hydrology_Universal-dev-ZYJBX\DBManager\obj\Debug\DBManager.pdb
+E:\C2019110\bin\Debug\DBManager.dll
+E:\C2019110\bin\Debug\DBManager.pdb
+E:\C2019110\hydroSW\Hydrology_Universal-dev-ZYJBX\DBManager\obj\Debug\DBManager.csprojResolveAssemblyReference.cache
+E:\C2019110\hydroSW\Hydrology_Universal-dev-ZYJBX\DBManager\obj\Debug\DBManager.dll
+E:\C2019110\hydroSW\Hydrology_Universal-dev-ZYJBX\DBManager\obj\Debug\DBManager.pdb

@@ -9,33 +9,33 @@ namespace Hydrology.Entity
         /// </summary>
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 12)]
         public byte[] m_modemId;
-
-
         /// <summary>
         /// DTU进入Internet的代理主机IP地址
         /// </summary>
-
         public uint  m_sin_addr;
 
         /// <summary>
         ///DTU进入Internet的代理主机IP端口
         /// </summary>
         public ushort m_sin_port;
-
         /// <summary>
         /// DTU在移动网内IP地址
         /// </summary>
-       
         public uint  m_local_addr;
-
+        /// <summary>
+        ///DTU进入Internet的代理主机IP端口
+        /// </summary>
+        
         /// <summary>
         ///DTU在移动网内IP端口
         /// </summary>
         public ushort m_local_port;
-
         /// <summary>
         /// DTU登录时间
         /// </summary>
+        /// 
+        public ushort m_demo_port;
+
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 20)]
         public byte[] m_logon_date;
 

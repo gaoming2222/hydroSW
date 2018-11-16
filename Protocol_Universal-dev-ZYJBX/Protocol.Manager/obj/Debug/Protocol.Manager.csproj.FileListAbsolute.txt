@@ -175,3 +175,8 @@ C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Manager\obj\Debug\Protocol.Manager.pdb
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Manager.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Manager.pdb
+E:\C2019110\bin\Debug\Protocol.Manager.dll
+E:\C2019110\bin\Debug\Protocol.Manager.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Manager\obj\Debug\Protocol.Manager.csprojResolveAssemblyReference.cache
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Manager\obj\Debug\Protocol.Manager.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Manager\obj\Debug\Protocol.Manager.pdb

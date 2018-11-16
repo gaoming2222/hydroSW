@@ -260,6 +260,7 @@ namespace Hydrology.Forms
                         {
                             var stationName = QueryStationNameByUserID(dtu);
                             var stationID = QueryStationIDByUserID(dtu);
+                            
                             if (stationName != "---")
                             {
                                 dgvDTUList.RefreshGPRSInfo(portValue, stationName, stationID, dtu);
@@ -436,6 +437,7 @@ namespace Hydrology.Forms
                         {
                             var stationName = QueryStationNameByUserID_new(dtu);
                             var stationID = QueryStationIDByUserID_new(dtu);
+                            portValue = dtu.m_demo_port;
                             if (stationName != "---")
                             {
                                 dgvDTUList.RefreshGPRSInfo_new(portValue, stationName, stationID, dtu);
@@ -485,6 +487,7 @@ namespace Hydrology.Forms
                                 {
                                     var stationName = QueryStationNameByUserID_new(dtu);
                                     var stationID = QueryStationIDByUserID_new(dtu);
+                                    portValue = dtu.m_demo_port;
                                     if (stationName != "---")
                                     {
                                         dgvDTUList.RefreshGPRSInfo_new(portValue, stationName, stationID, dtu);
@@ -540,6 +543,7 @@ namespace Hydrology.Forms
                                     {
                                         var stationName = QueryStationNameByUserID_new(dtu);
                                         var stationID = QueryStationIDByUserID_new(dtu);
+                                        portValue = dtu.m_demo_port;
                                         var station = QueryStationEntityByUserID_new(dtu);
                                         var soil = QuerySoilStationEntityByUserID_new(dtu);
                                         if (station != null)

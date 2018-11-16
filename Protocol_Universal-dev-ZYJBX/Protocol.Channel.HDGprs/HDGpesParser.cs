@@ -7,13 +7,8 @@ using Hydrology.Entity;
 using Protocol.Channel.Interface;
 using Protocol.Data.Interface;
 using System.IO;
-//using Protocol.Data.HJJBX;
-//using Protocol.Data.Lib;
-//using Protocol.Data.SXDZ;
 using Protocol.Data.ZYJBX;
 using System.Text;
-//using Protocol.Data.XYJBX;
-
 
 namespace Protocol.Channel.HDGprs
 {

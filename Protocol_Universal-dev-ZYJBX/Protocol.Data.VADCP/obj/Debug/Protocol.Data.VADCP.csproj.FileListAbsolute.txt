@@ -1,0 +1,4 @@
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.VADCP\bin\Debug\Protocol.Data.VADCP.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.VADCP\bin\Debug\Protocol.Data.VADCP.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.VADCP\obj\Debug\Protocol.Data.VADCP.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.VADCP\obj\Debug\Protocol.Data.VADCP.pdb

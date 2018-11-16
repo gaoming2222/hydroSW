@@ -1,0 +1,4 @@
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.RG30\bin\Debug\Protocol.Data.RG30.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.RG30\bin\Debug\Protocol.Data.RG30.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.RG30\obj\Debug\Protocol.Data.RG30.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.RG30\obj\Debug\Protocol.Data.RG30.pdb

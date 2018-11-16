@@ -166,6 +166,7 @@ namespace Protocol.Channel.HDGprs
             try
             {
                 flag = do_read_proc(ref dat, mess, true);
+                
                 return flag;
             }
             catch (Exception ee2)
@@ -261,6 +262,7 @@ namespace Protocol.Channel.HDGprs
                     string userid = System.Text.Encoding.Default.GetString(dtu.m_modemId);
                     ushort a = ntohs((ushort)dtu.m_local_port);
                     ushort b = ntohs((ushort)dtu.m_sin_port);
+                    
                     string c = dtu.m_sin_port.ToString();
                     dtuList.Add(userid,dtu);
                    

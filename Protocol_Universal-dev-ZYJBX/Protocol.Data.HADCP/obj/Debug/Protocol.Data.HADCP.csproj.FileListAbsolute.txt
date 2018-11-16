@@ -1,0 +1,4 @@
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.HADCP\bin\Debug\Protocol.Data.HADCP.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.HADCP\bin\Debug\Protocol.Data.HADCP.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.HADCP\obj\Debug\Protocol.Data.HADCP.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.HADCP\obj\Debug\Protocol.Data.HADCP.pdb

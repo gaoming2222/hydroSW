@@ -67,3 +67,8 @@ C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.
 C:\Users\yuan8\Desktop\ZYJVersion\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.ZYJBX\obj\Debug\Protocol.Data.ZYJBX.pdb
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Data.ZYJBX.dll
 C:\Users\yuan8\Desktop\ZYJVersion\bin\Debug\Protocol.Data.ZYJBX.pdb
+E:\C2019110\bin\Debug\Protocol.Data.ZYJBX.dll
+E:\C2019110\bin\Debug\Protocol.Data.ZYJBX.pdb
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.ZYJBX\obj\Debug\Protocol.Data.ZYJBX.csprojResolveAssemblyReference.cache
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.ZYJBX\obj\Debug\Protocol.Data.ZYJBX.dll
+E:\C2019110\hydroSW\Protocol_Universal-dev-ZYJBX\Protocol.Data.ZYJBX\obj\Debug\Protocol.Data.ZYJBX.pdb
